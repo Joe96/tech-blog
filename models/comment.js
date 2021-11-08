@@ -22,14 +22,6 @@ Comment.init({
       id: 'id',
       },
   },
-  book_id: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    references: {
-      model:'book',
-      id: 'id'
-    },
-  },
 },
 
 {
