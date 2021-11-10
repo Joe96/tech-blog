@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
 router.get('/post/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
-      include: [{ model: Comment, include: [User] }]
+      include: [{model: Comment, include: [User]}]
     });
 
     const post = postData.get({ plain: true });
@@ -39,7 +39,7 @@ router.get('/post/:id', withAuth, async (req, res) => {
   }
 });
 
-router.get('/homepage', withAuth, async (req, res) => {
+router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
@@ -49,7 +49,7 @@ router.get('/homepage', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
     console.log(user)
-    res.render('homepage', {
+    res.render('profile', {
       ...user,
       logged_in: true
     });

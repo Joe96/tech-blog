@@ -9,7 +9,7 @@ Comment.init({
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
-  },
+  }, 
   body: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -26,10 +26,10 @@ Comment.init({
     type: DataTypes.INTEGER,
     allowNull: false,
     references: {
-        model: 'post',
-        key: 'id'
-    }
-  }
+      model:'post',
+      id: 'id'
+    },
+  },
 },
 
 {

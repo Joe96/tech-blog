@@ -1,9 +1,10 @@
 *{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
+  background-color: rgb(187, 187, 187);
 }
 header {
-  background-color: #25a846;
+  background-color: rgb(1, 107, 36);
   border-bottom: solid 2px;
   width: 100%;
   height: 15%;
@@ -18,6 +19,7 @@ header {
   box-shadow: 0 4px 8px 0 gray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+  margin: 10px;
 }
 
 .book-card {
@@ -25,6 +27,9 @@ header {
   box-shadow: 0 4px 8px 0 gray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+  margin: 10px;
+  height: 350px;
+  background-color: rgb(186, 163, 207);
 }
 
 .book-card-header {
@@ -33,7 +38,12 @@ header {
 
 
 #book-img {
-  width: 250px;
+  width: 150px;
+}
+
+#book-img2 {
+  width: 200px;
+  height: 225px;
 }
 
 menu {
@@ -67,6 +77,48 @@ ul#navbar li a {
 
 
 ul#navbar li a:hover {
-  background-color: #25a846;
+  background-color: rgb(1, 107, 36);
   color: white;
+}
+
+.single-book-card {
+  width: 90%;
+  border: 3px solid black;
+  box-shadow: 1px 4px 8px 1px gray;
+  font-size: medium;
+  background-color: rgb(186, 163, 207);
+}
+
+.comment-card {
+  width: 90%;
+  font-size: smaller;
+  box-shadow: 0 4px 8px 0 gray;
+  border-radius: 5px;
+  border: 1px solid rgb(46, 45, 45);
+  padding: 1%;
+  background-color: rgb(186, 163, 207);
+}
+
+.comment-card text {
+  background-color: rgb(186, 163, 207);
+}
+
+.card-comment {
+  width: 300px;
+  height: 300px;
+  padding: 1%;
+}
+
+#cart-img {
+  width: 75px;
+}
+.btn1 {
+  background-color:rgb(1, 107, 36);
+  color:honeydew;
+}
+
+.container-profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

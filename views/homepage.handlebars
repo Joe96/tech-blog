@@ -1,17 +1,16 @@
-<h2>Welcome</h2>
+<h2>Welcome, join in on the latest tech conversations</h2>
 
-<div class="container-fluid">
-  <div class="row justify-content-between">
-    <div class="col">
-      <article class="post">
+{{#each posts as |posts|}}
+<section class="post-card justify-space-around p-1">
+  <a href="/post/{{id}}">
+    <header>{{title}}</header>
+  </a>
+</section>
+{{/each}}
 
-        {{#each posts as |post| }}
-            {{> post-info post}}
-        {{/each}}
 
-      </article>
-    </div>
-  </div>
-</div>
 
-<script src="/javascript/comment.js"></script>
+
+
+
+

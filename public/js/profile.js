@@ -6,9 +6,8 @@ const updateCommentForm= async (event) => {
   
   document.location.replace(`/update-comment/${id}`);
 }}
-  
+
 let comment = document.querySelectorAll('#update-delete-button');
 comment.forEach(btn => {
   btn.addEventListener('click', updateCommentForm)
 })
- 

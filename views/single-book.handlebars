@@ -1,0 +1,44 @@
+<div class=" mb-3 single-post-card" >
+  <div class="row no-gutters">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{post.title}}</h5>
+        <p class="card-text">Description: {{post.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="container">
+{{#each post.comments as |comment|}}
+  <section class="comment-card">
+      <div class="card-body">
+        <p>{{comment.body}}</p>
+        <p class="card-text"><small class="text-muted">User: {{comment.user.username}}</small></p>
+
+      </div>
+  </section>
+{{/each}}
+</section>
+
+<section class="container">
+  <div class="comment-card-form">
+    <form class="form comment-form" id="new-comment-form">
+      <div>
+        <input type="hidden" name="post" id="post" value="{{post.id}}" />
+        <input type="hidden" name="user_id" id="user_id" value="{{user.id}}" />
+        <label for"comment">Comment:</label>
+        <textarea class="form-imput" type="text" id="comment"></textarea>
+      </div>
+      <div class="form-group">
+        <button class="btn btn1" id="comment-btn" type="submit">Submit Comment</button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+
+  <script src='/js/comment.js'></script>
