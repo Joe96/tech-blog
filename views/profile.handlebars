@@ -1,12 +1,13 @@
 <div class="text-center">
-  <h2>Welcome {{username}} to your dashboard!</h2>
+  <h2>Welcome to your dashboard!</h2>
 
   <h4>Comments</h4>
   <section class="container-profile"> 
-    {{#each comments as |comment|}}
+      {{!-- <h5>{{post.title}}</h5> --}}
+    {{#each posts as |post| }}
       <section class="card card-comment">
-      <h5>{{comment.post.title}}</h5>
-        <p> {{body}}</p>
+        <h1>{{title}}</h1>
+        <p> {{content}}</p>
         <input type="hidden" id="comment-id" value="{{comment.id}}">
         <button class="btn btn1"id="update-delete-button" data-id="{{comment.id}}" type="submit">Update or Delete Comment</button> 
       </section>

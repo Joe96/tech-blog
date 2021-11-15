@@ -22,7 +22,7 @@ header {
   margin: 10px;
 }
 
-.book-card {
+.post-card {
   width: 250px;
   box-shadow: 0 4px 8px 0 gray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,16 +32,16 @@ header {
   background-color: rgb(186, 163, 207);
 }
 
-.book-card-header {
+.post-card-header {
   font-size: larger;
 }
 
 
-#book-img {
+#post-img {
   width: 150px;
 }
 
-#book-img2 {
+#post-img2 {
   width: 200px;
   height: 225px;
 }
@@ -81,7 +81,7 @@ ul#navbar li a:hover {
   color: white;
 }
 
-.single-book-card {
+.single-post-card {
   width: 90%;
   border: 3px solid black;
   box-shadow: 1px 4px 8px 1px gray;
