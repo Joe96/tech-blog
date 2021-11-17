@@ -29,7 +29,7 @@ header {
   text-align: center;
   margin: 10px;
   height: 350px;
-  background-color: rgb(186, 163, 207);
+  background-color: rgb(255, 255, 255);
 }
 
 .post-card-header {
@@ -86,7 +86,7 @@ ul#navbar li a:hover {
   border: 3px solid black;
   box-shadow: 1px 4px 8px 1px gray;
   font-size: medium;
-  background-color: rgb(186, 163, 207);
+  background-color: rgb(255, 255, 255);
 }
 
 .comment-card {
@@ -96,11 +96,11 @@ ul#navbar li a:hover {
   border-radius: 5px;
   border: 1px solid rgb(46, 45, 45);
   padding: 1%;
-  background-color: rgb(186, 163, 207);
+  background-color: rgb(255, 255, 255);
 }
 
 .comment-card text {
-  background-color: rgb(186, 163, 207);
+  background-color: rgb(255, 255, 255);
 }
 
 .card-comment {
