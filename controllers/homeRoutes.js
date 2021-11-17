@@ -81,6 +81,27 @@ router.get('/update-comment/:id', withAuth, async (req,res) => {
   }
 })
 
+router.get('/add-post', withAuth, async (req, res) => {
+  console.log(req.session.user_id);
+  try {
+    // // Find the logged in user based on the session ID
+    // const postData = await Post.findAll({
+    //   where:{
+    //     user_id: req.session.user_id
+
+    // }, include: [{model:Comment}],
+    // });
+    
+    // const posts = postData.map((post) => post.get({ plain: true }));
+    // console.log(post)
+    res.render('add-post', {
+      logged_in: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
